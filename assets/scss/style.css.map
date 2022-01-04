@@ -1,0 +1,21 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "style.scss",
+        "_variables.scss",
+        "_skin.scss",
+        "_mixins-media.scss",
+        "_mixins.scss",
+        "_extends.scss",
+        "_bootstrap-theming.scss",
+        "_common.scss",
+        "_header.scss",
+        "_main.scss",
+        "_page.scss",
+        "_sidebar.scss",
+        "_footer.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
