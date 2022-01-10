@@ -1,0 +1,98 @@
+.header-logo__description, .header-logo__title {
+  text-shadow: 0 0 5px black, 0 0 15px black, 0 0 30px black;
+}
+
+.navbar-inverse {
+  background-color: #191919;
+}
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: #053159;
+}
+.navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: #517ba2;
+}
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+  background-color: #165690;
+}
+.row {
+  margin-left: 0px;
+}
+
+.container-fluid > .navbar-collapse,
+.container-fluid > .navbar-header,
+.container > .navbar-collapse,
+.container > .navbar-header {
+  text-align: center;
+}
+
+.navbar-toggle {
+  float: none;
+  margin-right: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 16px;
+  font-family: "PT Sans", sans-serif;
+  overflow-y: scroll;
+}
+
+.header {
+  margin-bottom: 80px;
+}
+
+.header-logo {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #232323;
+  background-image: url(../img/header-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.header-logo__title {
+  color: #df8a13;
+  font-family: "PT Serif", serif;
+  display: block;
+  font-weight: 700;
+}
+.header-logo__description {
+  color: #ffffff;
+  display: block;
+  letter-spacing: 0.2em;
+  font-size: 1.15rem;
+}
+@media (min-width: 576px) {
+  .header-logo__title {
+    font-size: 3.5rem;
+    margin-right: -0.34em;
+    letter-spacing: 0.33em;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-inverse .navbar-nav > li > a {
+    border-radius: 4px;
+  }
+  .navbar-left li {
+    margin: 5px 5px 5px 0;
+  }
+  .navbar-right li {
+    margin: 5px 0 5px 5px;
+  }
+}
+@media (max-width: 767.8px) {
+  .navbar-right {
+    margin-top: 0;
+  }
+  .navbar-left {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 575.8px) {
+  .header-logo__title {
+    font-size: 2.5rem;
+    letter-spacing: 0.33em;
+  }
+}

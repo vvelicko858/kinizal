@@ -1,0 +1,42 @@
+.header{
+    margin-bottom: $gap*5.3333333333333 ;
+}
+.header-logo{
+    text-align: center;
+    padding: 100px 0;
+    
+    background-color: $color-dark;
+    background-image: url(../img/header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+
+    &__title{
+      color: $color-accent ;
+      font-family: $font-header;
+      display: block;
+      font-weight: 700;
+      
+      @include xs-min{
+          font-size: 3.5rem;
+          margin-right: -0.34em;
+          letter-spacing: 0.33em;
+         
+      }
+
+      @include xs{
+        font-size: 2.5rem;
+        letter-spacing: 0.33em;
+
+      }
+
+      @extend %text-shadow;    
+    }
+
+    &__description{
+        color:  $color-light;
+        display: block;
+        letter-spacing: 0.2em;
+        font-size: 1.15rem;
+        @extend %text-shadow;      
+    }
+}
