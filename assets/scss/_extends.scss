@@ -2,3 +2,8 @@
     text-shadow: 0 0 5px darken($color-dark, 14%), 0 0 15px darken($color-dark, 14%),
     0 0 30px darken($color-dark, 14%);
 }
+
+%margin-button-large{
+    margin-bottom: $gap*5.3333333333333 ;
+
+}

@@ -2,6 +2,10 @@
   text-shadow: 0 0 5px black, 0 0 15px black, 0 0 30px black;
 }
 
+.left-sidebar, .main, .header {
+  margin-bottom: 80px;
+}
+
 .navbar-inverse {
   background-color: #191919;
 }
@@ -30,6 +34,27 @@
   margin-right: 0;
 }
 
+.panel {
+  border: none;
+  background-color: #f2f2f2;
+  margin-bottom: 30px;
+}
+.panel-info > .panel-heading {
+  color: #ffffff;
+  background-color: #df8a13;
+  border: none;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+}
+.panel-body {
+  border: 1px solid #d5d5d5;
+  border-radius: 0 0 4px 4px;
+}
+
+.input-lg, .input-group-lg > .form-control {
+  font-size: 0.875rem;
+}
+
 html {
   font-size: 16px;
 }
@@ -38,10 +63,6 @@ body {
   font-size: 16px;
   font-family: "PT Sans", sans-serif;
   overflow-y: scroll;
-}
-
-.header {
-  margin-bottom: 80px;
 }
 
 .header-logo {
@@ -63,6 +84,37 @@ body {
   display: block;
   letter-spacing: 0.2em;
   font-size: 1.15rem;
+}
+
+.left-sidebar .panel:last-of-type {
+  margin: 0;
+}
+
+.vertical-slider {
+  border-radius: 4px;
+  overflow: hidden;
+}
+.vertical-slider__image {
+  width: 100%;
+}
+
+.user-login {
+  position: relative;
+}
+.user-login__tabs {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  border: none;
+}
+.user-login__tabs a {
+  background-color: transparent !important;
+  border: none !important;
+  color: #d5d5d5;
+  padding: 14px 5px 11px !important;
+}
+.user-login__tabs .active a {
+  color: #ffffff !important;
 }
 @media (min-width: 576px) {
   .header-logo__title {

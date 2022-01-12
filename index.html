@@ -65,11 +65,147 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-xs-12" style="text-align: justify;"></div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus illum deserunt libero doloribus quaerat in fugiat sequi culpa labore sed excepturi quam perferendis quae nam aliquid quod iusto tempore quo, asperiores esse dicta vitae quasi ipsum! Dolorem ratione deserunt labore quisquam officiis sint sequi non commodi veritatis ut, minima aliquid ducimus numquam officia provident autem dolor. Deleniti facilis exercitationem, animi mollitia in qui aut. Iste ducimus sed est expedita laboriosam itaque ex quaerat. Iusto quas, laborum quia voluptates impedit distinctio delectus similique recusandae illo vitae unde pariatur amet voluptas praesentium. Perferendis eligendi eaque mollitia modi voluptate id velit similique accusamus.
+            <main class=" main col-lg-9 col-lg-push-3 coll-md-8 coll-push-4">main
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa dolore, porro, nesciunt quas quibusdam quam quia quod rem ipsum vero temporibus laudantium quis totam expedita, est molestias distinctio ad!
+            </main>
+            <aside class="left-sidebar col-lg-3 col-lg-pull-9 coll-md-4 coll-pull-8">
+
+
+                <div class="vertical-slider panel panel-info">
+                    <div id="vertical-carousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#vertical-carousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#vertical-carousel" data-slide-to="1"></li>
+                          <li data-target="#vertical-carousel" data-slide-to="2"></li>
+                        </ol>
+                      
+                        <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                            <img class="vertical-slider__image" src="assets/img/films/1401663.jpg" alt="img">
+                    
+                          </div>
+                          <div class="item">
+                            <img class="vertical-slider__image" src="assets/img/films/1289488.jpg" alt="img">                            
+                          </div>
+
+                          <div class="item">
+                            <img class="vertical-slider__image" src="assets/img/films/1263242.jpg" alt="img">                            
+                          </div>
+
+                         
+                        </div>
+                      
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                  </div>
+
+                  <div class="site-search panel panel-info">
+                    <div class="panel-heading">Поиск</div>
+                    <div class="panel-body">
+                      <form action="search">
+
+                        <div class="input-group input-group-lg">
+                          <input class="form-control" type="search" placeholder="Пойск по сайту">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                          </span>
+                        </div>
+
+                      </form>
+                    </div>
+                  </div>
+
+                  <div class="user-login panel panel-info">
+                    <div class="panel-heading">Пользователь </div>
+                    <div class="panel-body">
+
+                      <div>
+
+                        <ul class="user-login__tabs nav nav-tabs" role="tablist">
+                          <li role="presentation" class="active"><a href="#user-login-sidebar" aria-controls="user-login-sidebar" role="tab" data-toggle="tab">
+                         <span class="glyphicon glyphicon-log-in"></span>
+                          </a></li>
+                          <li role="presentation"><a href="#user-registration-sidebar" aria-controls="user-registration-sidebar" role="tab" data-toggle="tab">
+                            <span class="glyphicon glyphicon-user"></span>
+
+                          </a></li>
+                        </ul>
+                      
+                        <div class="user-login__content tab-content">
+                          <div role="tabpanel" class="tab-pane fade in active" id="user-login-sidebar">
+                            
+                            <form action="login">
+                              <div class="form-group">
+                                 <input class="form-control input-lg" type="text" placeholder="Логин">
+                               </div>
+                               <div class="form-group">
+                                 <input class="form-control input-lg" type="password" placeholder="Пароль">
+       
+                               </div>
+                               <button class="btn btn-default btn-lg btn-block">Вход</button>
+                             </form>
+
+                          </div>
+                          <div role="tabpanel" class="tab-pane fade" id="user-registration-sidebar">
+                            <form action="registration">
+                              <div class="form-group">
+                                 <input class="form-control input-lg" type="text" placeholder="Логин">
+                               </div>
+                               <div class="form-group">
+                                 <input class="form-control input-lg" type="password" placeholder="Пароль">
+                                 </div>
+                                 <div class="form-group">
+                                  <input class="form-control input-lg" type="email" placeholder="Email">
+
+                                 </div>
+         
+       
+                              
+                               <button class="btn btn-default btn-lg btn-block">Регистрация</button>
+                             </form>
+                          </div>
+                        </div>
+                      
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="site-news panel panel-info">
+                    <div class="panel-heading">Новости сайта </div>
+                    <div class="panel-body">
+                      Panelcontent
+                    </div>
+                  </div>
+
+                  <div class="top-films panel panel-info">
+                    <div class="panel-heading">Рейтинг фильмов </div>
+                    <div class="panel-body">
+                      Panelcontent
+                    </div>
+                  </div>
+            </aside>
         </div>
     </div>
 
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora illo optio quam. Mollitia illum, fugit atque dicta animi porro! Aut earum deleniti iste quae fugit necessitatibus iure quis adipisci illum?
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="libs/jquery/dist/jquery.min.js"></script>

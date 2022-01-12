@@ -1,0 +1,38 @@
+.left-sidebar{
+    @extend %margin-button-large;
+
+    .panel:last-of-type{
+        margin: 0;
+    }
+}
+
+.vertical-slider{
+
+    border-radius: 4px;
+    overflow: hidden;
+    &__image{
+        width: 100%;
+    }
+}
+
+.user-login{
+    position: relative;
+
+    &__tabs{
+        position: absolute;
+        top: 0;
+        right: 15px;
+        border: none;
+
+        a{
+            background-color: transparent !important;
+            border: none !important;
+            color: $color-gray;
+            padding: 14px 5px 11px !important;
+
+        }
+        .active a{
+            color: $color-light !important;
+        }
+    }
+}

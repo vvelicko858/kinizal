@@ -1,5 +1,5 @@
 .header{
-    margin-bottom: $gap*5.3333333333333 ;
+  @extend %margin-button-large;
 }
 .header-logo{
     text-align: center;

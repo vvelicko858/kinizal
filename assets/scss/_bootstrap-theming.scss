@@ -63,3 +63,32 @@
     float: none;
     margin-right: 0;
 }
+
+
+
+.panel{
+    border: none;
+    background-color: darken($color-light, 5%);
+    margin-bottom: $gap * 2;
+
+
+   &-info>.panel-heading {
+        color: $color-light;
+        background-color: $color-accent;
+        border: none;   
+        font-size: 1.2rem;   
+        letter-spacing: 0.1em;
+    }
+    &-body{
+        border: 1px solid $color-gray;
+        border-radius: 0 0 4px 4px;
+    }
+
+}
+
+.input{
+    &-lg,
+    &-group-lg>.form-control{
+        font-size: 0.875rem;
+    }
+}
