@@ -39,8 +39,8 @@
 
                     <div class="collapse navbar-collapse" id="navbar-top">
                         <ul class="nav navbar-nav navbar-left">
-                            <li class="active "><a href="#">Главная</a></li>
-                            <li><a href="#">Фильмы</a></li>
+                            <li class="active "><a href="index.html">Главная</a></li>
+                            <li><a href="page.html">Фильмы</a></li>
                             <li><a href="#">Сериалы </a></li>
                             <li><a href="#">Контакты</a></li>
                         </ul>
@@ -65,13 +65,411 @@
 
     <div class="container">
         <div class="row">
-            <main class=" main col-lg-9 col-lg-push-3 coll-md-8 coll-push-4">main
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa dolore, porro, nesciunt quas quibusdam quam quia quod rem ipsum vero temporibus laudantium quis totam expedita, est molestias distinctio ad!
-            </main>
+            <main class=" main col-lg-9 col-lg-push-3 coll-md-8 coll-push-4">
+              
+              <section class="site-search panel panel-info hidden-lg">
+                <div class="panel-heading">Поиск</div>
+                <div class="panel-body">
+                  <form action="search">
+
+                    <div class="input-group input-group-lg">
+                      <input class="form-control" type="search" placeholder="Пойск по сайту">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                      </span>
+                    </div>
+
+                  </form>
+                </div>
+              </section>
+
+              <section class="user-login panel panel-info hidden-lg">
+                <div class="panel-heading">Пользователь </div>
+                <div class="panel-body">
+
+                  <div>
+
+                    <ul class="user-login__tabs nav nav-tabs" role="tablist">
+                      <li role="presentation" class="active"><a href="#user-login-main" aria-controls="user-login-main" role="tab" data-toggle="tab">
+                     <span class="glyphicon glyphicon-log-in"></span>
+                      </a></li>
+                      <li role="presentation"><a href="#user-registration-main" aria-controls="user-registration-main" role="tab" data-toggle="tab">
+                        <span class="glyphicon glyphicon-user"></span>
+
+                      </a></li>
+                    </ul>
+                  
+                    <div class="user-login__content tab-content">
+                      <div role="tabpanel" class="tab-pane fade in active" id="user-login-main">
+                        
+                        <form action="login">
+                          <div class="form-group">
+                             <input class="form-control input-lg" type="text" placeholder="Логин">
+                           </div>
+                           <div class="form-group">
+                             <input class="form-control input-lg" type="password" placeholder="Пароль">
+   
+                           </div>
+                           <button class="btn btn-default btn-lg btn-block">Вход</button>
+                         </form>
+
+                      </div>
+                      <div role="tabpanel" class="tab-pane fade" id="user-registration-main">
+                        <form action="registration">
+                          <div class="form-group">
+                             <input class="form-control input-lg" type="text" placeholder="Логин">
+                           </div>
+                           <div class="form-group">
+                             <input class="form-control input-lg" type="password" placeholder="Пароль">
+                             </div>
+                             <div class="form-group">
+                              <input class="form-control input-lg" type="email" placeholder="Email">
+
+                             </div>
+     
+   
+                          
+                           <button class="btn btn-default btn-lg btn-block">Регистрация</button>
+                         </form>
+                      </div>
+                    </div>
+                  
+                  </div>
+
+                </div>
+              </section>
+              
+               <section class="new-films">
+                 <h1 class="new-films__title">Новые фильмы</h1>
+
+                 <div class="new-films-row row">
+                   
+                   <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                     <div class="new-films-item__thumbnail thumbnail">
+                       <a href="">
+                         <img class="new-films-item__image" src="assets/img/films/1266931.jpg" alt="название фильма">
+                         <div class="new-films-item__caption caption">
+                           <h3 class="new-films-item__title"> Стражи галактики</h3>
+                         </div>
+                       </a>
+                     </div>
+                   </article>
+
+                   <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                    <div class="new-films-item__thumbnail thumbnail">
+                      <a href="">
+                        <img class="new-films-item__image" src="assets/img/films/1289488.jpg" alt="название фильма">
+                        <div class="new-films-item__caption caption">
+                          <h3 class="new-films-item__title"> Занесло</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+
+                  <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                    <div class="new-films-item__thumbnail thumbnail">
+                      <a href="">
+                        <img class="new-films-item__image" src="assets/img/films/1341151.jpg" alt="название фильма">
+                        <div class="new-films-item__caption caption">
+                          <h3 class="new-films-item__title"> Из машины</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+
+                  <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                    <div class="new-films-item__thumbnail thumbnail">
+                      <a href="">
+                        <img class="new-films-item__image" src="assets/img/films/1381061.jpg" alt="название фильма">
+                        <div class="new-films-item__caption caption">
+                          <h3 class="new-films-item__title"> Выхода нет</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+
+                  <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                    <div class="new-films-item__thumbnail thumbnail">
+                      <a href="">
+                        <img class="new-films-item__image" src="assets/img/films/1393263.jpg" alt="название фильма">
+                        <div class="new-films-item__caption caption">
+                          <h3 class="new-films-item__title"> Человек муравей</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+
+                  <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                    <div class="new-films-item__thumbnail thumbnail">
+                      <a href="">
+                        <img class="new-films-item__image" src="assets/img/films/1263242.jpg" alt="название фильма">
+                        <div class="new-films-item__caption caption">
+                          <h3 class="new-films-item__title"> Люси</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+
+                  <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                    <div class="new-films-item__thumbnail thumbnail">
+                      <a href="">
+                        <img class="new-films-item__image" src="assets/img/films/1401663.jpg" alt="название фильма">
+                        <div class="new-films-item__caption caption">
+                          <h3 class="new-films-item__title"> Марсианин</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+
+                  <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                    <div class="new-films-item__thumbnail thumbnail">
+                      <a href="">
+                        <img class="new-films-item__image" src="assets/img/films/1415999.jpg" alt="название фильма">
+                        <div class="new-films-item__caption caption">
+                          <h3 class="new-films-item__title"> Дочь Бога</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+
+                  <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                    <div class="new-films-item__thumbnail thumbnail">
+                      <a href="">
+                        <img class="new-films-item__image" src="assets/img/films/1423264.jpg" alt="название фильма">
+                        <div class="new-films-item__caption caption">
+                          <h3 class="new-films-item__title"> Месть кутюр</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+
+                  <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                    <div class="new-films-item__thumbnail thumbnail">
+                      <a href="">
+                        <img class="new-films-item__image" src="assets/img/films/1441076.jpg" alt="название фильма">
+                        <div class="new-films-item__caption caption">
+                          <h3 class="new-films-item__title"> 5ять</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+
+
+                  <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                    <div class="new-films-item__thumbnail thumbnail">
+                      <a href="">
+                        <img class="new-films-item__image" src="assets/img/films/1453229.jpg" alt="название фильма">
+                        <div class="new-films-item__caption caption">
+                          <h3 class="new-films-item__title"> Люди Икс</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+
+
+                  <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                    <div class="new-films-item__thumbnail thumbnail">
+                      <a href="">
+                        <img class="new-films-item__image" src="assets/img/films/1455536.jpg" alt="название фильма">
+                        <div class="new-films-item__caption caption">
+                          <h3 class="new-films-item__title"> Иллюзия обмана 2</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+                 </div>
+               </section>
+
+               <section class="top-week">
+                <h2>ТОП за неделю</h2>
+                <div class="top-week-row row">
+                  <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+                    <div class="top-week-item__thumbnail thumbnail">
+                      <a href="#">
+                        <img src="assets/img/films/1401663.jpg" alt="Марсианин" class="top-week-item__image">
+                        <div class="top-week-item__caption caption">
+                          <h3 class="top-week-item__title">Марсианин</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+                  <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+                    <div class="top-week-item__thumbnail thumbnail">
+                      <a href="#">
+                        <img src="assets/img/films/1453229.jpg" alt="Люди Икс" class="top-week-item__image">
+                        <div class="top-week-item__caption caption">
+                          <h3 class="top-week-item__title">Люди Икс</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+                  <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+                    <div class="top-week-item__thumbnail thumbnail">
+                      <a href="#">
+                        <img src="assets/img/films/1263242.jpg" alt="Люси" class="top-week-item__image">
+                        <div class="top-week-item__caption caption">
+                          <h3 class="top-week-item__title">Люси</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+                  <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+                    <div class="top-week-item__thumbnail thumbnail">
+                      <a href="#">
+                        <img src="assets/img/films/1266931.jpg" alt="Стражи галактики" class="top-week-item__image">
+                        <div class="top-week-item__caption caption">
+                          <h3 class="top-week-item__title">Стражи галактики</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+                  <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+                    <div class="top-week-item__thumbnail thumbnail">
+                      <a href="#">
+                        <img src="assets/img/films/1289488.jpg" alt="Занесло" class="top-week-item__image">
+                        <div class="top-week-item__caption caption">
+                          <h3 class="top-week-item__title">Занесло</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+                  <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+                    <div class="top-week-item__thumbnail thumbnail">
+                      <a href="#">
+                        <img src="assets/img/films/1341151.jpg" alt="Из машины" class="top-week-item__image">
+                        <div class="top-week-item__caption caption">
+                          <h3 class="top-week-item__title">Из машины</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+                  <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+                    <div class="top-week-item__thumbnail thumbnail">
+                      <a href="#">
+                        <img src="assets/img/films/1381061.jpg" alt="Выхода нет" class="top-week-item__image">
+                        <div class="top-week-item__caption caption">
+                          <h3 class="top-week-item__title">Выхода нет</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+                  <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+                    <div class="top-week-item__thumbnail thumbnail">
+                      <a href="#">
+                        <img src="assets/img/films/1393263.jpg" alt="Человек муравей" class="top-week-item__image">
+                        <div class="top-week-item__caption caption">
+                          <h3 class="top-week-item__title">Человек муравей</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+                  <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+                    <div class="top-week-item__thumbnail thumbnail">
+                      <a href="#">
+                        <img src="assets/img/films/1415999.jpg" alt="Дочь Бога" class="top-week-item__image">
+                        <div class="top-week-item__caption caption">
+                          <h3 class="top-week-item__title">Дочь Бога</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+                  <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+                    <div class="top-week-item__thumbnail thumbnail">
+                      <a href="#">
+                        <img src="assets/img/films/1423264.jpg" alt="Месть от кутюр" class="top-week-item__image">
+                        <div class="top-week-item__caption caption">
+                          <h3 class="top-week-item__title">Месть от кутюр</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+                  <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+                    <div class="top-week-item__thumbnail thumbnail">
+                      <a href="#">
+                        <img src="assets/img/films/1441076.jpg" alt="5ять" class="top-week-item__image">
+                        <div class="top-week-item__caption caption">
+                          <h3 class="top-week-item__title">5ять</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+                  <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+                    <div class="top-week-item__thumbnail thumbnail">
+                      <a href="#">
+                        <img src="assets/img/films/1455536.jpg" alt="Иллюзия обмана 2" class="top-week-item__image">
+                        <div class="top-week-item__caption caption">
+                          <h3 class="top-week-item__title">Иллюзия обмана 2</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+              </section>
+
+              <section class="film-news">
+                <h2>Новости кино</h2>
+                <article class="film-news-item">
+                  <h3><a class="hover" href="#">Кейт Бекинсейл представила фильм "Другой мир: Войны крови"</a></h3>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="film-news-item__thumbnail thumbnail">
+                        <img class="film-news-item__image" src="assets/img/news/news-1.jpg" alt="image">
+                      </div>
+                    </div>
+                    <div class="col-sm-8">
+                      <p class="film-news-item__text">Кейт Бекинсейл представила в Мексике свой новый фильм "Другой мир: Войны
+                        крови". На красной дорожке актриса позировала фотографам в роскошном красном платье. В фильме речь
+                        пойдет о Селене - Воительница-вампир Селена вступает в свой последний и решающий бой между оборотнями
+                        и кланом вампиров, который предал ее. В украинских кинотеатрах картину можно увидеть с 1 декабря...
+                      </p>
+                      <a href="#" class="film-news-item__button btn btn-warning">Подробней</a>
+                    </div>
+                  </div>
+                </article>
+                <article class="film-news-item">
+                  <h3><a class="hover" href="#">Критики Нью-Йорка выбрали лучший фильм 2016 года</a></h3>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="film-news-item__thumbnail thumbnail">
+                        <img class="film-news-item__image" src="assets/img/news/news-2.jpg" alt="image">
+                      </div>
+                    </div>
+                    <div class="col-sm-8">
+                      <p class="film-news-item__text">Им стал мюзикл "Ла-Ла Ленд", который снял режиссер Дэмьен Шазелл. Лучшим
+                        актером года был признан Кейси Аффлек, сыгравший в картине "Манчестер у моря", а в аналогичной женской
+                        категории победа была присуждена Изабель Юппер снимавшаяся в фильме "Она". Лучшей актрисой второго
+                        плана названа Мишель Уильямс, сыгравшая в драме "Некоторые женщины", а лучшим актером второго плана -
+                        Махершалалхашбаз Али за роль в картине "Лунный свет"...</p>
+                      <a href="#" class="film-news-item__button btn btn-warning">Подробней</a>
+                    </div>
+                  </div>
+                </article>
+                <article class="film-news-item">
+                  <h3><a class="hover" href="#">Крис Прэтт и Дженнифер Лоуренс представили "Пассажиров" в Париже</a></h3>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="film-news-item__thumbnail thumbnail">
+                        <img class="film-news-item__image" src="assets/img/news/news-3.jpg" alt="image">
+                      </div>
+                    </div>
+                    <div class="col-sm-8">
+                      <p class="film-news-item__text">Хотя до премьеры "Пассажиров" остается еще почти месяц, промо-тур в
+                        поддержку нового фильма уже начался: Крис Прэтт и Дженнифер Лоуренс, исполнившие в фильме главные
+                        роли, представили "Пассажиров" в рамках фотоколла в Париже. В кинотеатрах "Пассажиры" появятся под
+                        занавес 2016 года – 22 декабря...</p>
+                      <a href="#" class="film-news-item__button btn btn-warning">Подробней</a>
+                    </div>
+                  </div>
+                </article>
+              </section>
+
+                 </main>
             <aside class="left-sidebar col-lg-3 col-lg-pull-9 coll-md-4 coll-pull-8">
 
 
-                <div class="vertical-slider panel panel-info">
+                <div class="vertical-slider panel panel-info hidden-xs hidden-md hidden-sm">
                     <div id="vertical-carousel" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                           <li data-target="#vertical-carousel" data-slide-to="0" class="active"></li>
@@ -106,7 +504,7 @@
                       </div>
                   </div>
 
-                  <div class="site-search panel panel-info">
+                  <div class="site-search panel panel-info hidden-xs hidden-sm hidden-md">
                     <div class="panel-heading">Поиск</div>
                     <div class="panel-body">
                       <form action="search">
@@ -124,7 +522,7 @@
                     </div>
                   </div>
 
-                  <div class="user-login panel panel-info">
+                  <div class="user-login panel panel-info hidden-xs hidden-sm hidden-md">
                     <div class="panel-heading">Пользователь </div>
                     <div class="panel-body">
 
@@ -272,20 +670,75 @@
         </div>
     </div>
 
-    <footer>
-        <div class="container">
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="container">
             <div class="row">
-                <div class="col-xs-12">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora illo optio quam. Mollitia illum, fugit atque dicta animi porro! Aut earum deleniti iste quae fugit necessitatibus iure quis adipisci illum?
+    
+              <div class="footer-top">
+    
+                <div class="footer-first col-md-3 col-xs-6">
+                  <h4>Lorem ipsum dolor sit.</h4>
+                  <ul>
+                    <li><a href="#">Lorem ipsum dolor.</a></li>
+                    <li><a href="#">Delectus, labore, incidunt.</a></li>
+                    <li><a href="#">Eos neque, eius.</a></li>
+                    <li><a href="#">Minus, omnis vel.</a></li>
+                  </ul>
                 </div>
+    
+                <div class="footer-second col-md-3 col-xs-6">
+                  <h4>Voluptatem, commodi, at.</h4>
+                  <ul>
+                    <li><a href="#">Lorem ipsum dolor.</a></li>
+                    <li><a href="#">Delectus, labore, incidunt.</a></li>
+                    <li><a href="#">Eos neque, eius.</a></li>
+                    <li><a href="#">Minus, omnis vel.</a></li>
+                    <li><a href="#">Aspernatur, fugiat, possimus!</a></li>
+                  </ul>
+                </div>
+    
+                <div class="footer-third col-md-3 col-xs-6">
+                  <h4>Sed, ducimus perspiciatis.</h4>
+                  <ul>
+                    <li><a href="#">Lorem ipsum dolor.</a></li>
+                    <li><a href="#">Delectus, labore, incidunt.</a></li>
+                    <li><a href="#">Eos neque, eius.</a></li>
+                    <li><a href="#">Minus, omnis vel.</a></li>
+                  </ul>
+                </div>
+    
+                <div class="footer-fourth col-md-3 col-xs-6">
+                  <h4>Reiciendis, minima, a?</h4>
+                  <ul>
+                    <li><a href="#">Lorem ipsum dolor.</a></li>
+                    <li><a href="#">Delectus, labore, incidunt.</a></li>
+                    <li><a href="#">Eos neque, eius.</a></li>
+                    <li><a href="#">Minus, omnis vel.</a></li>
+                    <li><a href="#">Aspernatur, fugiat, possimus!</a></li>
+                  </ul>
+                </div>
+    
+              </div>
             </div>
+    
+            <div class="row">
+              <div class="footer-bottom">
+    
+                <div class="footer-fifth col-xs-12">
+                  <strong><a href="">Учебный шаблон Bootstrap v3.4.1. Разработка - Величко Иван</a></strong>
+                </div>
+    
+              </div>
+            </div>
+          </div>
         </div>
+    
+      </div>
     </footer>
 
-    <div class="test">
-      
-    </div>
-
+    
 
     <script src="libs/jquery/dist/jquery.min.js"></script>
     <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
